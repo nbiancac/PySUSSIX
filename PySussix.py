@@ -45,7 +45,7 @@ class Sussix():
         self.az = []
 
 
-    def sussix_inp(self, nt1=1, nt2=128, idam=2, ir=1, tunex=0.2, tuney=0.2):
+    def sussix_inp(self, nt1=1, nt2=128, idam=2, ir=1, tunex=0.2, tuney=0.2, tunes=0.001, ex=0.05, ey=0.05, es=0.0001,nharm=200):
         si = open("sussix.inp", "w")
         si.write('C\nC INPUT FOR SUSSIX_V4 ---17/09/1997---\n')
         si.write('C DETAILS ARE IN THE MAIN PROGRAM SUSSIX_V4.F\nC\n\n')
@@ -54,9 +54,9 @@ class Sussix():
         si.write('IANA  = 1\n')
         si.write('ICONV = 0\n')
         si.write('TURNS = '+str(nt1)+'  '+str(nt2)+'\n')
-        si.write('NARM  = 200\n')
-        si.write('ISTUN = 1  0.05  0.05  0.05\n')
-        si.write('TUNES = '+str(tunex)+'  '+str(tuney)+' .001\n')
+        si.write('NARM  = '+str(nharm)+'\n')
+        si.write('ISTUN = 1  '+str(ex)+'  '+str(ey)+'  '+str(es)+'\n')
+        si.write('TUNES = '+str(tunex)+'  '+str(tuney)+' '+str(tunes)+'\n')
         si.write('NSUS  = 0\n')
         si.write('IDAM  = '+str(idam)+'\n')
         si.write('NTWIX = 1\n')
