@@ -55,7 +55,7 @@ class Sussix():
         si.write('ICONV = 0\n')
         si.write('TURNS = '+str(nt1)+'  '+str(nt2)+'\n')
         si.write('NARM  = '+str(nharm)+'\n')
-        si.write('ISTUN = 1  '+str(ex)+'  '+str(ey)+'  '+str(es)+'\n')
+        si.write('ISTUN = 2  '+str(ex)+'  '+str(ey)+'  '+str(es)+'\n')
         si.write('TUNES = '+str(tunex)+'  '+str(tuney)+' '+str(tunes)+'\n')
         si.write('NSUS  = 0\n')
         si.write('IDAM  = '+str(idam)+'\n')
